@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B727A9DA237B4EAD0091D598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B727A9D9237B4EAD0091D598 /* AppDelegate.swift */; };
+		B727A9DC237B4EAD0091D598 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B727A9DB237B4EAD0091D598 /* GameScene.sks */; };
+		B727A9DE237B4EAD0091D598 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = B727A9DD237B4EAD0091D598 /* Actions.sks */; };
+		B727A9E0237B4EAD0091D598 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B727A9DF237B4EAD0091D598 /* GameScene.swift */; };
+		B727A9E2237B4EAD0091D598 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B727A9E1237B4EAD0091D598 /* GameViewController.swift */; };
+		B727A9E5237B4EAD0091D598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B727A9E3237B4EAD0091D598 /* Main.storyboard */; };
+		B727A9E7237B4EAE0091D598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B727A9E6237B4EAE0091D598 /* Assets.xcassets */; };
+		B727A9EA237B4EAE0091D598 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B727A9E8237B4EAE0091D598 /* LaunchScreen.storyboard */; };
+		B727A9F5237B4EAE0091D598 /* KorgathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B727A9F4237B4EAE0091D598 /* KorgathTests.swift */; };
+		B727AA00237B4EAE0091D598 /* KorgathUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B727A9FF237B4EAE0091D598 /* KorgathUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B727A9F1237B4EAE0091D598 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B727A9CE237B4EAD0091D598 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B727A9D5237B4EAD0091D598;
+			remoteInfo = Korgath;
+		};
+		B727A9FC237B4EAE0091D598 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B727A9CE237B4EAD0091D598 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B727A9D5237B4EAD0091D598;
+			remoteInfo = Korgath;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B727A9D6237B4EAD0091D598 /* Korgath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Korgath.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B727A9D9237B4EAD0091D598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B727A9DB237B4EAD0091D598 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		B727A9DD237B4EAD0091D598 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		B727A9DF237B4EAD0091D598 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		B727A9E1237B4EAD0091D598 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		B727A9E4237B4EAD0091D598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B727A9E6237B4EAE0091D598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B727A9E9237B4EAE0091D598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B727A9EB237B4EAE0091D598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B727A9F0237B4EAE0091D598 /* KorgathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KorgathTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B727A9F4237B4EAE0091D598 /* KorgathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KorgathTests.swift; sourceTree = "<group>"; };
+		B727A9F6237B4EAE0091D598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B727A9FB237B4EAE0091D598 /* KorgathUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KorgathUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B727A9FF237B4EAE0091D598 /* KorgathUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KorgathUITests.swift; sourceTree = "<group>"; };
+		B727AA01237B4EAE0091D598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B727A9D3237B4EAD0091D598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B727A9ED237B4EAE0091D598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B727A9F8237B4EAE0091D598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B727A9CD237B4EAD0091D598 = {
+			isa = PBXGroup;
+			children = (
+				B727A9D8237B4EAD0091D598 /* Korgath */,
+				B727A9F3237B4EAE0091D598 /* KorgathTests */,
+				B727A9FE237B4EAE0091D598 /* KorgathUITests */,
+				B727A9D7237B4EAD0091D598 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B727A9D7237B4EAD0091D598 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B727A9D6237B4EAD0091D598 /* Korgath.app */,
+				B727A9F0237B4EAE0091D598 /* KorgathTests.xctest */,
+				B727A9FB237B4EAE0091D598 /* KorgathUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B727A9D8237B4EAD0091D598 /* Korgath */ = {
+			isa = PBXGroup;
+			children = (
+				B727A9D9237B4EAD0091D598 /* AppDelegate.swift */,
+				B727A9DB237B4EAD0091D598 /* GameScene.sks */,
+				B727A9DD237B4EAD0091D598 /* Actions.sks */,
+				B727A9DF237B4EAD0091D598 /* GameScene.swift */,
+				B727A9E1237B4EAD0091D598 /* GameViewController.swift */,
+				B727A9E3237B4EAD0091D598 /* Main.storyboard */,
+				B727A9E6237B4EAE0091D598 /* Assets.xcassets */,
+				B727A9E8237B4EAE0091D598 /* LaunchScreen.storyboard */,
+				B727A9EB237B4EAE0091D598 /* Info.plist */,
+			);
+			path = Korgath;
+			sourceTree = "<group>";
+		};
+		B727A9F3237B4EAE0091D598 /* KorgathTests */ = {
+			isa = PBXGroup;
+			children = (
+				B727A9F4237B4EAE0091D598 /* KorgathTests.swift */,
+				B727A9F6237B4EAE0091D598 /* Info.plist */,
+			);
+			path = KorgathTests;
+			sourceTree = "<group>";
+		};
+		B727A9FE237B4EAE0091D598 /* KorgathUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B727A9FF237B4EAE0091D598 /* KorgathUITests.swift */,
+				B727AA01237B4EAE0091D598 /* Info.plist */,
+			);
+			path = KorgathUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B727A9D5237B4EAD0091D598 /* Korgath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B727AA04237B4EAE0091D598 /* Build configuration list for PBXNativeTarget "Korgath" */;
+			buildPhases = (
+				B727A9D2237B4EAD0091D598 /* Sources */,
+				B727A9D3237B4EAD0091D598 /* Frameworks */,
+				B727A9D4237B4EAD0091D598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Korgath;
+			productName = Korgath;
+			productReference = B727A9D6237B4EAD0091D598 /* Korgath.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B727A9EF237B4EAE0091D598 /* KorgathTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B727AA07237B4EAE0091D598 /* Build configuration list for PBXNativeTarget "KorgathTests" */;
+			buildPhases = (
+				B727A9EC237B4EAE0091D598 /* Sources */,
+				B727A9ED237B4EAE0091D598 /* Frameworks */,
+				B727A9EE237B4EAE0091D598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B727A9F2237B4EAE0091D598 /* PBXTargetDependency */,
+			);
+			name = KorgathTests;
+			productName = KorgathTests;
+			productReference = B727A9F0237B4EAE0091D598 /* KorgathTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B727A9FA237B4EAE0091D598 /* KorgathUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B727AA0A237B4EAE0091D598 /* Build configuration list for PBXNativeTarget "KorgathUITests" */;
+			buildPhases = (
+				B727A9F7237B4EAE0091D598 /* Sources */,
+				B727A9F8237B4EAE0091D598 /* Frameworks */,
+				B727A9F9237B4EAE0091D598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B727A9FD237B4EAE0091D598 /* PBXTargetDependency */,
+			);
+			name = KorgathUITests;
+			productName = KorgathUITests;
+			productReference = B727A9FB237B4EAE0091D598 /* KorgathUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B727A9CE237B4EAD0091D598 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Sebastien XAVIER CARLOS";
+				TargetAttributes = {
+					B727A9D5237B4EAD0091D598 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					B727A9EF237B4EAE0091D598 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = B727A9D5237B4EAD0091D598;
+					};
+					B727A9FA237B4EAE0091D598 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = B727A9D5237B4EAD0091D598;
+					};
+				};
+			};
+			buildConfigurationList = B727A9D1237B4EAD0091D598 /* Build configuration list for PBXProject "Korgath" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B727A9CD237B4EAD0091D598;
+			productRefGroup = B727A9D7237B4EAD0091D598 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B727A9D5237B4EAD0091D598 /* Korgath */,
+				B727A9EF237B4EAE0091D598 /* KorgathTests */,
+				B727A9FA237B4EAE0091D598 /* KorgathUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B727A9D4237B4EAD0091D598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B727A9E5237B4EAD0091D598 /* Main.storyboard in Resources */,
+				B727A9DC237B4EAD0091D598 /* GameScene.sks in Resources */,
+				B727A9E7237B4EAE0091D598 /* Assets.xcassets in Resources */,
+				B727A9EA237B4EAE0091D598 /* LaunchScreen.storyboard in Resources */,
+				B727A9DE237B4EAD0091D598 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B727A9EE237B4EAE0091D598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B727A9F9237B4EAE0091D598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B727A9D2237B4EAD0091D598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B727A9E0237B4EAD0091D598 /* GameScene.swift in Sources */,
+				B727A9E2237B4EAD0091D598 /* GameViewController.swift in Sources */,
+				B727A9DA237B4EAD0091D598 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B727A9EC237B4EAE0091D598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B727A9F5237B4EAE0091D598 /* KorgathTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B727A9F7237B4EAE0091D598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B727AA00237B4EAE0091D598 /* KorgathUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B727A9F2237B4EAE0091D598 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B727A9D5237B4EAD0091D598 /* Korgath */;
+			targetProxy = B727A9F1237B4EAE0091D598 /* PBXContainerItemProxy */;
+		};
+		B727A9FD237B4EAE0091D598 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B727A9D5237B4EAD0091D598 /* Korgath */;
+			targetProxy = B727A9FC237B4EAE0091D598 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B727A9E3237B4EAD0091D598 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B727A9E4237B4EAD0091D598 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B727A9E8237B4EAE0091D598 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B727A9E9237B4EAE0091D598 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B727AA02237B4EAE0091D598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B727AA03237B4EAE0091D598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B727AA05237B4EAE0091D598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Korgath/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sebastien.xaviercarlos.Korgath;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B727AA06237B4EAE0091D598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Korgath/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sebastien.xaviercarlos.Korgath;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B727AA08237B4EAE0091D598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KorgathTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sebastien.xaviercarlos.KorgathTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Korgath.app/Korgath";
+			};
+			name = Debug;
+		};
+		B727AA09237B4EAE0091D598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KorgathTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sebastien.xaviercarlos.KorgathTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Korgath.app/Korgath";
+			};
+			name = Release;
+		};
+		B727AA0B237B4EAE0091D598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KorgathUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sebastien.xaviercarlos.KorgathUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Korgath;
+			};
+			name = Debug;
+		};
+		B727AA0C237B4EAE0091D598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KorgathUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sebastien.xaviercarlos.KorgathUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Korgath;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B727A9D1237B4EAD0091D598 /* Build configuration list for PBXProject "Korgath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B727AA02237B4EAE0091D598 /* Debug */,
+				B727AA03237B4EAE0091D598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B727AA04237B4EAE0091D598 /* Build configuration list for PBXNativeTarget "Korgath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B727AA05237B4EAE0091D598 /* Debug */,
+				B727AA06237B4EAE0091D598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B727AA07237B4EAE0091D598 /* Build configuration list for PBXNativeTarget "KorgathTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B727AA08237B4EAE0091D598 /* Debug */,
+				B727AA09237B4EAE0091D598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B727AA0A237B4EAE0091D598 /* Build configuration list for PBXNativeTarget "KorgathUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B727AA0B237B4EAE0091D598 /* Debug */,
+				B727AA0C237B4EAE0091D598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B727A9CE237B4EAD0091D598 /* Project object */;
+}
