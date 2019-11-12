@@ -146,6 +146,10 @@
                         <viewLayoutGuide key="safeArea" id="mha-eh-gHH"/>
                     </view>
                     <navigationItem key="navigationItem" id="4wT-tU-BsA"/>
+                    <connections>
+                        <outlet property="ennemiLife" destination="Zy8-NV-wjD" id="ehk-dx-DsT"/>
+                        <outlet property="heroLife" destination="vIO-a3-asU" id="H19-Hp-IlC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="84w-bF-6YH" sceneMemberID="firstResponder"/>
             </objects>
@@ -217,6 +221,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Pyl-kW-wvY"/>
+        <segue reference="eNz-0p-mtx"/>
     </inferredMetricsTieBreakers>
 </document>
