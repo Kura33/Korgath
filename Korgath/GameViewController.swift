@@ -41,7 +41,6 @@ class GameViewController: UIViewController {
 //            }
 //        }
         
-        pvActualHero(damage: 0)
     }
 
     override var shouldAutorotate: Bool {
@@ -60,37 +59,5 @@ class GameViewController: UIViewController {
         return true
     }
     
-//    début de mon code spécifique
-    
-    var pvMax = ["pvMaxHero": 100, "pvMaxEnnemi": 100]
-     var pvActual = ["pvHero": 100, "pvEnnemi": 100]
-     
-     var damage = 0
-         
-     @IBOutlet weak var heroLife: UILabel!
-     @IBOutlet weak var ennemiLife: UILabel!
 
-     
-     func pvActualHero(damage: Int) -> Int {
-        pvActual["pvHero"]! -= damage
-
-//         let quoteLifeH = "\(String(describing: pvActual["pvHero"]!)) / \(String(describing: pvMax["pvMaxHero"]!))"
-         
-         heroLife.text = "test"
-         
-         return pvActual["pvHero"]!
-         
-     }
-     
-    func pvActualEnnemi(damage: Int) -> Int { pvActual["pvEnnemi"]! -= damage
-     
-     let quoteLifeE = "\(String(describing: pvActual["pvEnnemi"])) / \(String(describing: pvMax["pvMaxEnnemi"]))"
-     
-     ennemiLife.text = quoteLifeE
-     
-        return pvActual["pvEnnemi"]!
-     
-     }
-    
-    
 }

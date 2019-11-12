@@ -17,6 +17,7 @@
 		B727A9EA237B4EAE0091D598 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B727A9E8237B4EAE0091D598 /* LaunchScreen.storyboard */; };
 		B727A9F5237B4EAE0091D598 /* KorgathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B727A9F4237B4EAE0091D598 /* KorgathTests.swift */; };
 		B727AA00237B4EAE0091D598 /* KorgathUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B727A9FF237B4EAE0091D598 /* KorgathUITests.swift */; };
+		B727AA0E237B55F60091D598 /* FightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B727AA0D237B55F60091D598 /* FightController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		B727A9FB237B4EAE0091D598 /* KorgathUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KorgathUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B727A9FF237B4EAE0091D598 /* KorgathUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KorgathUITests.swift; sourceTree = "<group>"; };
 		B727AA01237B4EAE0091D598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B727AA0D237B55F60091D598 /* FightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				B727A9E6237B4EAE0091D598 /* Assets.xcassets */,
 				B727A9E8237B4EAE0091D598 /* LaunchScreen.storyboard */,
 				B727A9EB237B4EAE0091D598 /* Info.plist */,
+				B727AA0D237B55F60091D598 /* FightController.swift */,
 			);
 			path = Korgath;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			files = (
 				B727A9E0237B4EAD0091D598 /* GameScene.swift in Sources */,
 				B727A9E2237B4EAD0091D598 /* GameViewController.swift in Sources */,
+				B727AA0E237B55F60091D598 /* FightController.swift in Sources */,
 				B727A9DA237B4EAD0091D598 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
