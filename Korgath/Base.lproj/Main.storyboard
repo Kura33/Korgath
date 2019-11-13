@@ -203,7 +203,7 @@
         <!--Menu-->
         <scene sceneID="Bl0-Dv-Wq9">
             <objects>
-                <viewController storyboardIdentifier="GvcLoose" title="Menu" id="yaU-of-ZCS" customClass="GameViewController" customModule="Korgath" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GvcLoose" title="Menu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yaU-of-ZCS" customClass="GameViewController" customModule="Korgath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ziv-gc-Nlx" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -238,6 +238,6 @@
         <image name="orc.png" width="523" height="507"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eNz-0p-mtx"/>
+        <segue reference="Pyl-kW-wvY"/>
     </inferredMetricsTieBreakers>
 </document>

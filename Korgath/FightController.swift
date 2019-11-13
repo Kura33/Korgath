@@ -16,9 +16,24 @@ class FightController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        appel du clacul pv à afficher au lancement
+        //        appel du clacul pv à afficher au lancement
         pvActualHero(damage: 0)
         pvActualEnnemi(damage: 0)
+       guard let path = Bundle.main.path(forResource: "attackOrc", ofType: "wav")else{return}
+       let soundURl = URL(fileURLWithPath: path)
+       player2 = try? AVAudioPlayer(contentsOf: soundURl)
+       player2.prepareToPlay()
+        player2.numberOfLoops = -1
+       player2.play()
+       //player2.pause()
+       //player2.stop()
+        
+    }
+    
+    override func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)? = nil) {
+        player2.stop()
+        super.present(viewControllerToPresent, animated: flag, completion: completion)
+    
     }
     
     
@@ -27,75 +42,24 @@ class FightController: UIViewController {
     var pvMax = ["pvMaxHero": 100, "pvMaxEnnemi": 100]
     var pvActual = ["pvHero": 100, "pvEnnemi": 100]
     var player:AVAudioPlayer!
+    var player2:AVAudioPlayer!
     
     @IBOutlet weak var heroLife: UILabel!
     @IBOutlet weak var ennemiLife: UILabel!
     @IBOutlet weak var combatLog: UILabel!
     
-    func PlayAttackOrc(){
-        guard let path = Bundle.main.path(forResource: "attackOrc", ofType: "wav")else{return}
+    func initPlayer (name: String, type: String){
+        guard let path = Bundle.main.path(forResource: name, ofType: type)else{return}
         let soundURl = URL(fileURLWithPath: path)
         player = try? AVAudioPlayer(contentsOf: soundURl)
         player.prepareToPlay()
         player.play()
         //player.pause()
         //player.stop()
+        
     }
-    func PlayDefendOrc(){
-        guard let path = Bundle.main.path(forResource: "defendOrc", ofType: "m4a")else{return}
-        let soundURl = URL(fileURLWithPath: path)
-        player = try? AVAudioPlayer(contentsOf: soundURl)
-        player.prepareToPlay()
-        player.play()
-        //player.pause()
-        //player.stop()
-    }
-    func PlayTrickOrc(){
-        guard let path = Bundle.main.path(forResource: "trickOrc", ofType: "wav")else{return}
-        let soundURl = URL(fileURLWithPath: path)
-        player = try? AVAudioPlayer(contentsOf: soundURl)
-        player.prepareToPlay()
-        player.play()
-        //player.pause()
-        //player.stop()
-    }
-    func PlayAttackKnight(){
-        guard let path = Bundle.main.path(forResource: "attackKnight", ofType: "m4a")else{return}
-        let soundURl = URL(fileURLWithPath: path)
-        player = try? AVAudioPlayer(contentsOf: soundURl)
-        player.prepareToPlay()
-        player.play()
-        //player.pause()
-        //player.stop()
-    }
-    func PlayDefendKnight(){
-        guard let path = Bundle.main.path(forResource: "defendKnight", ofType: "m4a")else{return}
-        let soundURl = URL(fileURLWithPath: path)
-        player = try? AVAudioPlayer(contentsOf: soundURl)
-        player.prepareToPlay()
-        player.play()
-        //player.pause()
-        //player.stop()
-    }
-    func PlayTrickKnight(){
-        guard let path = Bundle.main.path(forResource: "trickKnight", ofType: "m4a")else{return}
-        let soundURl = URL(fileURLWithPath: path)
-        player = try? AVAudioPlayer(contentsOf: soundURl)
-        player.prepareToPlay()
-        player.play()
-        //player.pause()
-        //player.stop()
-    }
-    func PlayDraw(){
-        guard let path = Bundle.main.path(forResource: "attackSword", ofType: "wav")else{return}
-        let soundURl = URL(fileURLWithPath: path)
-        player = try? AVAudioPlayer(contentsOf: soundURl)
-        player.prepareToPlay()
-        player.play()
-        //player.pause()
-        //player.stop()
-    }
-    func pvActualHero(damage: Int) -> Int {
+    
+    func pvActualHero(damage: Int) {
         pvActual["pvHero"]! -= damage
         if pvActual["pvHero"]! < 0 {
             pvActual["pvHero"] = 0
@@ -106,17 +70,16 @@ class FightController: UIViewController {
         heroLife.text = quoteLifeH
         
         if pvActual["pvHero"]! == 0 {
-        //            switch view
-                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                 let controller = storyboard.instantiateViewController(withIdentifier: "GvcLoose")
-                 self.present(controller, animated: true, completion: nil)
-
-                }
-        return pvActual["pvHero"]!
+            //            switch view
+            
+            switchController(id: "GvcLoose")
+            
+        }
+        
         
     }
     
-    func pvActualEnnemi(damage: Int) -> Int {
+    func pvActualEnnemi(damage: Int) {
         pvActual["pvEnnemi"]! -= damage
         if pvActual["pvEnnemi"]! < 0 {
             pvActual["pvEnnemi"] = 0
@@ -127,14 +90,19 @@ class FightController: UIViewController {
         ennemiLife.text = quoteLifeE
         
         if pvActual["pvEnnemi"]! == 0 {
-//            switch view
-         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-         let controller = storyboard.instantiateViewController(withIdentifier: "GvcWin")
-         self.present(controller, animated: true, completion: nil)
-
+            //            switch view
+            switchController(id: "GvcWin")
+            
         }
-        return pvActual["pvEnnemi"]!
         
+        
+    }
+    
+    func switchController(id: String) {
+        player2.stop()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: id)
+        self.present(controller, animated: true, completion: nil)
     }
     
     func fight(heroChoice:String) {
@@ -155,43 +123,43 @@ class FightController: UIViewController {
             
             //            text combat logs
             combatLog.text = "Korgath \(heroChoice)! \nThe Knight \(ennemiChoice)! \nKorgath and The Knight incur a loss of \(dmgNormal) PV each!"
-            PlayDraw()
+            initPlayer(name: "attackSword", type: "wav")
             
         } else if (heroChoice == "attack" && ennemiChoice == "defend"){
             heroDamage += dmgCrit
             //            text combat log
             combatLog.text = "Korgath \(heroChoice)! \nThe Knight \(ennemiChoice)! \nKorgath incur a loss of \(dmgCrit) PV!"
-            PlayDefendKnight()
+            initPlayer(name: "defendKnight", type: "m4a")
             
         } else if (heroChoice == "attack" && ennemiChoice == "trick"){
             ennemiDamage += dmgCrit
             //    WINN e = damage +5
             combatLog.text = "Korgath \(heroChoice)! \nThe Knight \(ennemiChoice)! \nThe Knight incur a loss of \(dmgCrit) PV!"
-            PlayAttackOrc()
+            initPlayer(name: "attackOrc", type: "wav")
             
         } else if (heroChoice == "defend" && ennemiChoice == "attack"){
             ennemiDamage += dmgCrit
             //    WINN e = damage +5
             combatLog.text = "Korgath \(heroChoice)! \nThe Knight \(ennemiChoice)! \nThe Knight incur a loss of \(dmgCrit) PV!"
-            PlayDefendOrc()
+            initPlayer(name: "defendOrc", type: "m4a")
             
         } else if (heroChoice == "defend" && ennemiChoice == "trick"){
             heroDamage += dmgCrit
             //    LOOSE h = damage +5
             combatLog.text = "Korgath \(heroChoice)! \nThe Knight \(ennemiChoice)! \nKorgath incur a loss of \(dmgCrit) PV!"
-            PlayTrickKnight()
+            initPlayer(name: "trickKnight", type: "m4a")
             
         } else if (heroChoice == "trick" && ennemiChoice == "attack"){
             heroDamage += dmgCrit
             //    LOOSE h = damage +5
             combatLog.text = "Korgath \(heroChoice)! \nThe Knight \(ennemiChoice)! \nKorgath incur a loss of \(dmgCrit) PV!"
-            PlayAttackKnight()
+            initPlayer(name: "attackKnight", type: "m4a")
             
         } else if (heroChoice == "trick" && ennemiChoice == "defend"){
             ennemiDamage += dmgCrit
             //    WINN e = damage +5
             combatLog.text = "Korgath \(heroChoice)! \nThe Knight \(ennemiChoice)! \nThe Knight incur a loss of \(dmgCrit) PV!"
-            PlayTrickOrc()
+            initPlayer(name: "trickOrc", type: "wav")
             
         }
         
