@@ -18,6 +18,15 @@
 		B727A9F5237B4EAE0091D598 /* KorgathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B727A9F4237B4EAE0091D598 /* KorgathTests.swift */; };
 		B727AA00237B4EAE0091D598 /* KorgathUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B727A9FF237B4EAE0091D598 /* KorgathUITests.swift */; };
 		B727AA0E237B55F60091D598 /* FightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B727AA0D237B55F60091D598 /* FightController.swift */; };
+		B752188D237C432000BF41FF /* attackOrc.wav in Resources */ = {isa = PBXBuildFile; fileRef = B752188C237C432000BF41FF /* attackOrc.wav */; };
+		B752188F237C435800BF41FF /* attackSword.wav in Resources */ = {isa = PBXBuildFile; fileRef = B752188E237C435800BF41FF /* attackSword.wav */; };
+		B7521896237C4E3F00BF41FF /* trickOrc.wav in Resources */ = {isa = PBXBuildFile; fileRef = B7521895237C4E3F00BF41FF /* trickOrc.wav */; };
+		B752189B237C54D500BF41FF /* defendOrc.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B752189A237C54D500BF41FF /* defendOrc.m4a */; };
+		B752189D237C584D00BF41FF /* attackKnight.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B752189C237C584D00BF41FF /* attackKnight.m4a */; };
+		B752189F237C585500BF41FF /* defendKnight.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B752189E237C585500BF41FF /* defendKnight.m4a */; };
+		B75218A1237C586000BF41FF /* trickKnight.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B75218A0237C586000BF41FF /* trickKnight.m4a */; };
+		B75218A5237C5BE400BF41FF /* orc.png in Resources */ = {isa = PBXBuildFile; fileRef = B75218A4237C5BE400BF41FF /* orc.png */; };
+		B75218A7237C5BED00BF41FF /* knight.png in Resources */ = {isa = PBXBuildFile; fileRef = B75218A6237C5BED00BF41FF /* knight.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +64,16 @@
 		B727A9FF237B4EAE0091D598 /* KorgathUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KorgathUITests.swift; sourceTree = "<group>"; };
 		B727AA01237B4EAE0091D598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B727AA0D237B55F60091D598 /* FightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightController.swift; sourceTree = "<group>"; };
+		B752188C237C432000BF41FF /* attackOrc.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = attackOrc.wav; path = sound/attackOrc.wav; sourceTree = SOURCE_ROOT; };
+		B752188E237C435800BF41FF /* attackSword.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = attackSword.wav; path = sound/attackSword.wav; sourceTree = SOURCE_ROOT; };
+		B7521895237C4E3F00BF41FF /* trickOrc.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = trickOrc.wav; path = sound/trickOrc.wav; sourceTree = SOURCE_ROOT; };
+		B752189A237C54D500BF41FF /* defendOrc.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = defendOrc.m4a; path = sound/defendOrc.m4a; sourceTree = SOURCE_ROOT; };
+		B752189C237C584D00BF41FF /* attackKnight.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = attackKnight.m4a; path = sound/attackKnight.m4a; sourceTree = SOURCE_ROOT; };
+		B752189E237C585500BF41FF /* defendKnight.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = defendKnight.m4a; path = sound/defendKnight.m4a; sourceTree = SOURCE_ROOT; };
+		B75218A0237C586000BF41FF /* trickKnight.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = trickKnight.m4a; path = sound/trickKnight.m4a; sourceTree = SOURCE_ROOT; };
+		B75218A2237C59A800BF41FF /* defendOrc.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = defendOrc.wav; path = Korgath.xcodeproj/../sound/defendOrc.wav; sourceTree = SOURCE_ROOT; };
+		B75218A4237C5BE400BF41FF /* orc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = orc.png; path = images/orc.png; sourceTree = SOURCE_ROOT; };
+		B75218A6237C5BED00BF41FF /* knight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = knight.png; path = images/knight.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,16 +124,26 @@
 		B727A9D8237B4EAD0091D598 /* Korgath */ = {
 			isa = PBXGroup;
 			children = (
+				B75218A6237C5BED00BF41FF /* knight.png */,
+				B75218A4237C5BE400BF41FF /* orc.png */,
+				B75218A2237C59A800BF41FF /* defendOrc.wav */,
+				B75218A0237C586000BF41FF /* trickKnight.m4a */,
+				B752189E237C585500BF41FF /* defendKnight.m4a */,
+				B752189C237C584D00BF41FF /* attackKnight.m4a */,
+				B7521895237C4E3F00BF41FF /* trickOrc.wav */,
 				B727A9D9237B4EAD0091D598 /* AppDelegate.swift */,
 				B727A9DB237B4EAD0091D598 /* GameScene.sks */,
 				B727A9DD237B4EAD0091D598 /* Actions.sks */,
 				B727A9DF237B4EAD0091D598 /* GameScene.swift */,
 				B727A9E1237B4EAD0091D598 /* GameViewController.swift */,
 				B727A9E3237B4EAD0091D598 /* Main.storyboard */,
+				B752188E237C435800BF41FF /* attackSword.wav */,
+				B752188C237C432000BF41FF /* attackOrc.wav */,
 				B727A9E6237B4EAE0091D598 /* Assets.xcassets */,
 				B727A9E8237B4EAE0091D598 /* LaunchScreen.storyboard */,
 				B727A9EB237B4EAE0091D598 /* Info.plist */,
 				B727AA0D237B55F60091D598 /* FightController.swift */,
+				B752189A237C54D500BF41FF /* defendOrc.m4a */,
 			);
 			path = Korgath;
 			sourceTree = "<group>";
@@ -241,11 +270,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B752189B237C54D500BF41FF /* defendOrc.m4a in Resources */,
 				B727A9E5237B4EAD0091D598 /* Main.storyboard in Resources */,
+				B7521896237C4E3F00BF41FF /* trickOrc.wav in Resources */,
+				B752189D237C584D00BF41FF /* attackKnight.m4a in Resources */,
+				B75218A7237C5BED00BF41FF /* knight.png in Resources */,
 				B727A9DC237B4EAD0091D598 /* GameScene.sks in Resources */,
 				B727A9E7237B4EAE0091D598 /* Assets.xcassets in Resources */,
+				B752188D237C432000BF41FF /* attackOrc.wav in Resources */,
 				B727A9EA237B4EAE0091D598 /* LaunchScreen.storyboard in Resources */,
 				B727A9DE237B4EAD0091D598 /* Actions.sks in Resources */,
+				B75218A1237C586000BF41FF /* trickKnight.m4a in Resources */,
+				B75218A5237C5BE400BF41FF /* orc.png in Resources */,
+				B752188F237C435800BF41FF /* attackSword.wav in Resources */,
+				B752189F237C585500BF41FF /* defendKnight.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
