@@ -15,6 +15,7 @@ class FightController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        appel du clacul pv à afficher au lancement
         pvActualHero(damage: 0)
         pvActualEnnemi(damage: 0)
     }
@@ -28,6 +29,7 @@ class FightController: UIViewController {
     
     @IBOutlet weak var heroLife: UILabel!
     @IBOutlet weak var ennemiLife: UILabel!
+    @IBOutlet weak var combatLog: UILabel!
     
     
     func pvActualHero(damage: Int) -> Int {
@@ -73,7 +75,7 @@ class FightController: UIViewController {
     }
     
     func fight(heroChoice:String) {
-        let choice = ["attack", "defense", "trick"]
+        let choice = ["attack", "defend", "trick"]
         //        random ennemi choice
         let ennemiChoice = choice[Int(arc4random_uniform(UInt32(choice.count)))]
         var heroDamage = 0
@@ -89,26 +91,38 @@ class FightController: UIViewController {
             ennemiDamage += dmgNormal
             
             //            text combat logs
+            combatLog.text = "Korgath \(heroChoice)! \nThe Knight \(ennemiChoice)! \nKorgath and The Knight incur a loss of \(dmgNormal) PV each!"
             
-        } else if (heroChoice == "attack" && ennemiChoice == "defense"){
+        } else if (heroChoice == "attack" && ennemiChoice == "defend"){
             heroDamage += dmgCrit
             //            text combat log
+            combatLog.text = "Korgath \(heroChoice)! \nThe Knight \(ennemiChoice)! \nKorgath incur a loss of \(dmgCrit) PV!"
             
         } else if (heroChoice == "attack" && ennemiChoice == "trick"){
             ennemiDamage += dmgCrit
             //    WINN e = damage +5
-        } else if (heroChoice == "defense" && ennemiChoice == "attack"){
+            combatLog.text = "Korgath \(heroChoice)! \nThe Knight \(ennemiChoice)! \nThe Knight incur a loss of \(dmgCrit) PV!"
+            
+        } else if (heroChoice == "defend" && ennemiChoice == "attack"){
             ennemiDamage += dmgCrit
             //    WINN e = damage +5
-        } else if (heroChoice == "defense" && ennemiChoice == "trick"){
+            combatLog.text = "Korgath \(heroChoice)! \nThe Knight \(ennemiChoice)! \nThe Knight incur a loss of \(dmgCrit) PV!"
+            
+        } else if (heroChoice == "defend" && ennemiChoice == "trick"){
             heroDamage += dmgCrit
             //    LOOSE h = damage +5
+            combatLog.text = "Korgath \(heroChoice)! \nThe Knight \(ennemiChoice)! \nKorgath incur a loss of \(dmgCrit) PV!"
+            
         } else if (heroChoice == "trick" && ennemiChoice == "attack"){
             heroDamage += dmgCrit
             //    LOOSE h = damage +5
-        } else if (heroChoice == "trick" && ennemiChoice == "defense"){
+            combatLog.text = "Korgath \(heroChoice)! \nThe Knight \(ennemiChoice)! \nKorgath incur a loss of \(dmgCrit) PV!"
+            
+        } else if (heroChoice == "trick" && ennemiChoice == "defend"){
             ennemiDamage += dmgCrit
             //    WINN e = damage +5
+            combatLog.text = "Korgath \(heroChoice)! \nThe Knight \(ennemiChoice)! \nThe Knight incur a loss of \(dmgCrit) PV!"
+            
         }
         
         //        appeler func pv1ActualH ou E
@@ -126,7 +140,7 @@ class FightController: UIViewController {
     }
     
     @IBAction func defend() {
-        fight(heroChoice: "defense")
+        fight(heroChoice: "defend")
     }
     
     @IBAction func trick() {
