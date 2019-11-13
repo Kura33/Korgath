@@ -84,7 +84,7 @@
         <!--Menu-->
         <scene sceneID="tij-45-fN1">
             <objects>
-                <viewController title="Menu" id="Xxb-gC-OxQ" customClass="FightController" customModule="Korgath" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FightView" title="Menu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Xxb-gC-OxQ" customClass="FightController" customModule="Korgath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="TOF-IC-Ncs" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -167,7 +167,7 @@
         <!--Menu-->
         <scene sceneID="gZz-fU-ZmC">
             <objects>
-                <viewController title="Menu" id="Xtn-iF-gFl" customClass="GameViewController" customModule="Korgath" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GvcWin" title="Menu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Xtn-iF-gFl" customClass="GameViewController" customModule="Korgath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="taE-Vp-KVp" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -199,7 +199,7 @@
         <!--Menu-->
         <scene sceneID="Bl0-Dv-Wq9">
             <objects>
-                <viewController title="Menu" id="yaU-of-ZCS" customClass="GameViewController" customModule="Korgath" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GvcLoose" title="Menu" id="yaU-of-ZCS" customClass="GameViewController" customModule="Korgath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ziv-gc-Nlx" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
