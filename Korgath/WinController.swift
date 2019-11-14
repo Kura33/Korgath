@@ -1,8 +1,8 @@
 //
-//  GameViewController.swift
+//  Win.swift
 //  Korgath
 //
-//  Created by XAVIER CARLOS on 12/11/2019.
+//  Created by XAVIER CARLOS on 14/11/2019.
 //  Copyright © 2019 Sebastien XAVIER CARLOS. All rights reserved.
 //
 
@@ -12,16 +12,16 @@ import SpriteKit
 import GameplayKit
 import AVFoundation
 
-class GameViewController: UIViewController {
+class WinController: UIViewController {
      var player2:AVAudioPlayer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "menuBack.jpg")
+        backgroundImage.image = UIImage(named: "battleground1.jpg")
         backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
-        guard let path = Bundle.main.path(forResource: "menuMusic", ofType: "mp3")else{return}
+        guard let path = Bundle.main.path(forResource: "winMusic", ofType: "mp3")else{return}
         let soundURl = URL(fileURLWithPath: path)
         player2 = try? AVAudioPlayer(contentsOf: soundURl)
         player2.prepareToPlay()
@@ -31,40 +31,12 @@ class GameViewController: UIViewController {
         //player2.pause()
         //player2.stop()
         
-//        // Load 'GameScene.sks' as a GKScene. This provides gameplay related content
-//        // including entities and graphs.
-//        if let scene = GKScene(fileNamed: "GameScene") {
-//
-//            // Get the SKScene from the loaded GKScene
-//            if let sceneNode = scene.rootNode as! GameScene? {
-//
-//                // Copy gameplay related content over to the scene
-//                sceneNode.entities = scene.entities
-//                sceneNode.graphs = scene.graphs
-//
-//                // Set the scale mode to scale to fit the window
-//                sceneNode.scaleMode = .aspectFill
-//
-//                // Present the scene
-//                if let view = self.view as! SKView? {
-//                    view.presentScene(sceneNode)
-//
-//                    view.ignoresSiblingOrder = true
-//
-//                    view.showsFPS = true
-//                    view.showsNodeCount = true
-//                }
-//            }
-//        }
-        
     }
     override func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)? = nil) {
            player2.stop()
            super.present(viewControllerToPresent, animated: flag, completion: completion)
            
        }
-    
-    
     override var shouldAutorotate: Bool {
         return true
     }

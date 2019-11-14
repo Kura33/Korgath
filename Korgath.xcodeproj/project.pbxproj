@@ -27,6 +27,28 @@
 		B75218A1237C586000BF41FF /* trickKnight.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B75218A0237C586000BF41FF /* trickKnight.m4a */; };
 		B75218A5237C5BE400BF41FF /* orc.png in Resources */ = {isa = PBXBuildFile; fileRef = B75218A4237C5BE400BF41FF /* orc.png */; };
 		B75218A7237C5BED00BF41FF /* knight.png in Resources */ = {isa = PBXBuildFile; fileRef = B75218A6237C5BED00BF41FF /* knight.png */; };
+		B7F90D23237D4CD000B0C36C /* fightMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B7F90D22237D4CD000B0C36C /* fightMusic.mp3 */; };
+		B7F90D25237D535A00B0C36C /* menuMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B7F90D24237D535A00B0C36C /* menuMusic.mp3 */; };
+		B7F90D27237D566800B0C36C /* WinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F90D26237D566800B0C36C /* WinController.swift */; };
+		B7F90D29237D5B4C00B0C36C /* winMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B7F90D28237D5B4C00B0C36C /* winMusic.mp3 */; };
+		B7F90D2B237D5CBB00B0C36C /* LooseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F90D2A237D5CBB00B0C36C /* LooseController.swift */; };
+		B7F90D2D237D5DC700B0C36C /* looseMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B7F90D2C237D5DC700B0C36C /* looseMusic.mp3 */; };
+		B7F90D2F237D657700B0C36C /* test.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B7F90D2E237D657700B0C36C /* test.m4a */; };
+		B7F90D31237D68A700B0C36C /* battleground1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7F90D30237D68A600B0C36C /* battleground1.jpg */; };
+		B7F90D33237D883C00B0C36C /* sword.png in Resources */ = {isa = PBXBuildFile; fileRef = B7F90D32237D883B00B0C36C /* sword.png */; };
+		B7F90D35237D884700B0C36C /* shield.png in Resources */ = {isa = PBXBuildFile; fileRef = B7F90D34237D884600B0C36C /* shield.png */; };
+		B7F90D37237D884E00B0C36C /* trick.png in Resources */ = {isa = PBXBuildFile; fileRef = B7F90D36237D884E00B0C36C /* trick.png */; };
+		B7F90D39237D8B5300B0C36C /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = B7F90D38237D8B5300B0C36C /* logout.png */; };
+		B7F90D3B237D91E000B0C36C /* arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = B7F90D3A237D91E000B0C36C /* arrow2.png */; };
+		B7F90D3F237D968800B0C36C /* arrow3.png in Resources */ = {isa = PBXBuildFile; fileRef = B7F90D3E237D968700B0C36C /* arrow3.png */; };
+		B7F90D41237D973E00B0C36C /* arrow4.png in Resources */ = {isa = PBXBuildFile; fileRef = B7F90D40237D973E00B0C36C /* arrow4.png */; };
+		B7F90D43237D97A600B0C36C /* arrow1.png in Resources */ = {isa = PBXBuildFile; fileRef = B7F90D42237D97A600B0C36C /* arrow1.png */; };
+		B7F90D47237D9C2900B0C36C /* howToPlay.png in Resources */ = {isa = PBXBuildFile; fileRef = B7F90D46237D9C2900B0C36C /* howToPlay.png */; };
+		B7F90D4B237DA0F300B0C36C /* youdied.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7F90D4A237DA0F300B0C36C /* youdied.jpg */; };
+		B7F90D4F237DA54500B0C36C /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = B7F90D4E237DA54500B0C36C /* start.png */; };
+		B7F90D51237DA5F000B0C36C /* equal.png in Resources */ = {isa = PBXBuildFile; fileRef = B7F90D50237DA5F000B0C36C /* equal.png */; };
+		B7F90D53237DA73800B0C36C /* win.png in Resources */ = {isa = PBXBuildFile; fileRef = B7F90D52237DA73800B0C36C /* win.png */; };
+		B7F90D55237DA80C00B0C36C /* menuBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7F90D54237DA80C00B0C36C /* menuBack.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +96,28 @@
 		B75218A2237C59A800BF41FF /* defendOrc.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = defendOrc.wav; path = Korgath.xcodeproj/../sound/defendOrc.wav; sourceTree = SOURCE_ROOT; };
 		B75218A4237C5BE400BF41FF /* orc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = orc.png; path = images/orc.png; sourceTree = SOURCE_ROOT; };
 		B75218A6237C5BED00BF41FF /* knight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = knight.png; path = images/knight.png; sourceTree = SOURCE_ROOT; };
+		B7F90D22237D4CD000B0C36C /* fightMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fightMusic.mp3; path = sound/fightMusic.mp3; sourceTree = SOURCE_ROOT; };
+		B7F90D24237D535A00B0C36C /* menuMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = menuMusic.mp3; path = sound/menuMusic.mp3; sourceTree = SOURCE_ROOT; };
+		B7F90D26237D566800B0C36C /* WinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinController.swift; sourceTree = "<group>"; };
+		B7F90D28237D5B4C00B0C36C /* winMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = winMusic.mp3; path = sound/winMusic.mp3; sourceTree = SOURCE_ROOT; };
+		B7F90D2A237D5CBB00B0C36C /* LooseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LooseController.swift; sourceTree = "<group>"; };
+		B7F90D2C237D5DC700B0C36C /* looseMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = looseMusic.mp3; path = sound/looseMusic.mp3; sourceTree = SOURCE_ROOT; };
+		B7F90D2E237D657700B0C36C /* test.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = test.m4a; path = sound/test.m4a; sourceTree = SOURCE_ROOT; };
+		B7F90D30237D68A600B0C36C /* battleground1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = battleground1.jpg; path = images/battleground1.jpg; sourceTree = SOURCE_ROOT; };
+		B7F90D32237D883B00B0C36C /* sword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sword.png; path = images/sword.png; sourceTree = SOURCE_ROOT; };
+		B7F90D34237D884600B0C36C /* shield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shield.png; path = images/shield.png; sourceTree = SOURCE_ROOT; };
+		B7F90D36237D884E00B0C36C /* trick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = trick.png; path = images/trick.png; sourceTree = SOURCE_ROOT; };
+		B7F90D38237D8B5300B0C36C /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logout.png; path = images/logout.png; sourceTree = SOURCE_ROOT; };
+		B7F90D3A237D91E000B0C36C /* arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow2.png; path = images/arrow2.png; sourceTree = SOURCE_ROOT; };
+		B7F90D3E237D968700B0C36C /* arrow3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow3.png; path = images/arrow3.png; sourceTree = SOURCE_ROOT; };
+		B7F90D40237D973E00B0C36C /* arrow4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow4.png; path = images/arrow4.png; sourceTree = SOURCE_ROOT; };
+		B7F90D42237D97A600B0C36C /* arrow1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow1.png; path = images/arrow1.png; sourceTree = SOURCE_ROOT; };
+		B7F90D46237D9C2900B0C36C /* howToPlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = howToPlay.png; path = images/howToPlay.png; sourceTree = SOURCE_ROOT; };
+		B7F90D4A237DA0F300B0C36C /* youdied.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = youdied.jpg; path = images/youdied.jpg; sourceTree = SOURCE_ROOT; };
+		B7F90D4E237DA54500B0C36C /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = start.png; path = images/start.png; sourceTree = SOURCE_ROOT; };
+		B7F90D50237DA5F000B0C36C /* equal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = equal.png; path = images/equal.png; sourceTree = SOURCE_ROOT; };
+		B7F90D52237DA73800B0C36C /* win.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = win.png; path = images/win.png; sourceTree = SOURCE_ROOT; };
+		B7F90D54237DA80C00B0C36C /* menuBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = menuBack.jpg; path = images/menuBack.jpg; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,26 +168,48 @@
 		B727A9D8237B4EAD0091D598 /* Korgath */ = {
 			isa = PBXGroup;
 			children = (
+				B7F90D54237DA80C00B0C36C /* menuBack.jpg */,
+				B7F90D52237DA73800B0C36C /* win.png */,
+				B7F90D4E237DA54500B0C36C /* start.png */,
+				B7F90D4A237DA0F300B0C36C /* youdied.jpg */,
+				B7F90D46237D9C2900B0C36C /* howToPlay.png */,
+				B7F90D30237D68A600B0C36C /* battleground1.jpg */,
 				B75218A6237C5BED00BF41FF /* knight.png */,
 				B75218A4237C5BE400BF41FF /* orc.png */,
+				B7F90D38237D8B5300B0C36C /* logout.png */,
+				B7F90D3E237D968700B0C36C /* arrow3.png */,
+				B7F90D40237D973E00B0C36C /* arrow4.png */,
+				B7F90D34237D884600B0C36C /* shield.png */,
+				B7F90D3A237D91E000B0C36C /* arrow2.png */,
+				B7F90D36237D884E00B0C36C /* trick.png */,
+				B7F90D42237D97A600B0C36C /* arrow1.png */,
+				B7F90D32237D883B00B0C36C /* sword.png */,
+				B7F90D2E237D657700B0C36C /* test.m4a */,
+				B7F90D22237D4CD000B0C36C /* fightMusic.mp3 */,
 				B75218A2237C59A800BF41FF /* defendOrc.wav */,
+				B752189A237C54D500BF41FF /* defendOrc.m4a */,
 				B75218A0237C586000BF41FF /* trickKnight.m4a */,
 				B752189E237C585500BF41FF /* defendKnight.m4a */,
 				B752189C237C584D00BF41FF /* attackKnight.m4a */,
 				B7521895237C4E3F00BF41FF /* trickOrc.wav */,
-				B727A9D9237B4EAD0091D598 /* AppDelegate.swift */,
-				B727A9DB237B4EAD0091D598 /* GameScene.sks */,
-				B727A9DD237B4EAD0091D598 /* Actions.sks */,
-				B727A9DF237B4EAD0091D598 /* GameScene.swift */,
-				B727A9E1237B4EAD0091D598 /* GameViewController.swift */,
-				B727A9E3237B4EAD0091D598 /* Main.storyboard */,
+				B7F90D24237D535A00B0C36C /* menuMusic.mp3 */,
+				B7F90D2C237D5DC700B0C36C /* looseMusic.mp3 */,
+				B7F90D28237D5B4C00B0C36C /* winMusic.mp3 */,
 				B752188E237C435800BF41FF /* attackSword.wav */,
 				B752188C237C432000BF41FF /* attackOrc.wav */,
+				B727A9DB237B4EAD0091D598 /* GameScene.sks */,
+				B727A9DD237B4EAD0091D598 /* Actions.sks */,
 				B727A9E6237B4EAE0091D598 /* Assets.xcassets */,
-				B727A9E8237B4EAE0091D598 /* LaunchScreen.storyboard */,
 				B727A9EB237B4EAE0091D598 /* Info.plist */,
+				B727A9E8237B4EAE0091D598 /* LaunchScreen.storyboard */,
+				B727A9E3237B4EAD0091D598 /* Main.storyboard */,
+				B7F90D50237DA5F000B0C36C /* equal.png */,
+				B727A9D9237B4EAD0091D598 /* AppDelegate.swift */,
+				B727A9DF237B4EAD0091D598 /* GameScene.swift */,
+				B727A9E1237B4EAD0091D598 /* GameViewController.swift */,
+				B7F90D26237D566800B0C36C /* WinController.swift */,
+				B7F90D2A237D5CBB00B0C36C /* LooseController.swift */,
 				B727AA0D237B55F60091D598 /* FightController.swift */,
-				B752189A237C54D500BF41FF /* defendOrc.m4a */,
 			);
 			path = Korgath;
 			sourceTree = "<group>";
@@ -270,20 +336,40 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7F90D53237DA73800B0C36C /* win.png in Resources */,
+				B7F90D31237D68A700B0C36C /* battleground1.jpg in Resources */,
+				B7F90D3B237D91E000B0C36C /* arrow2.png in Resources */,
 				B752189B237C54D500BF41FF /* defendOrc.m4a in Resources */,
+				B7F90D25237D535A00B0C36C /* menuMusic.mp3 in Resources */,
 				B727A9E5237B4EAD0091D598 /* Main.storyboard in Resources */,
 				B7521896237C4E3F00BF41FF /* trickOrc.wav in Resources */,
+				B7F90D55237DA80C00B0C36C /* menuBack.jpg in Resources */,
 				B752189D237C584D00BF41FF /* attackKnight.m4a in Resources */,
 				B75218A7237C5BED00BF41FF /* knight.png in Resources */,
+				B7F90D2F237D657700B0C36C /* test.m4a in Resources */,
+				B7F90D4B237DA0F300B0C36C /* youdied.jpg in Resources */,
+				B7F90D4F237DA54500B0C36C /* start.png in Resources */,
 				B727A9DC237B4EAD0091D598 /* GameScene.sks in Resources */,
 				B727A9E7237B4EAE0091D598 /* Assets.xcassets in Resources */,
+				B7F90D37237D884E00B0C36C /* trick.png in Resources */,
+				B7F90D33237D883C00B0C36C /* sword.png in Resources */,
 				B752188D237C432000BF41FF /* attackOrc.wav in Resources */,
+				B7F90D2D237D5DC700B0C36C /* looseMusic.mp3 in Resources */,
 				B727A9EA237B4EAE0091D598 /* LaunchScreen.storyboard in Resources */,
+				B7F90D23237D4CD000B0C36C /* fightMusic.mp3 in Resources */,
 				B727A9DE237B4EAD0091D598 /* Actions.sks in Resources */,
+				B7F90D51237DA5F000B0C36C /* equal.png in Resources */,
+				B7F90D35237D884700B0C36C /* shield.png in Resources */,
+				B7F90D43237D97A600B0C36C /* arrow1.png in Resources */,
 				B75218A1237C586000BF41FF /* trickKnight.m4a in Resources */,
 				B75218A5237C5BE400BF41FF /* orc.png in Resources */,
+				B7F90D47237D9C2900B0C36C /* howToPlay.png in Resources */,
 				B752188F237C435800BF41FF /* attackSword.wav in Resources */,
 				B752189F237C585500BF41FF /* defendKnight.m4a in Resources */,
+				B7F90D41237D973E00B0C36C /* arrow4.png in Resources */,
+				B7F90D3F237D968800B0C36C /* arrow3.png in Resources */,
+				B7F90D29237D5B4C00B0C36C /* winMusic.mp3 in Resources */,
+				B7F90D39237D8B5300B0C36C /* logout.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +397,8 @@
 				B727A9E0237B4EAD0091D598 /* GameScene.swift in Sources */,
 				B727A9E2237B4EAD0091D598 /* GameViewController.swift in Sources */,
 				B727AA0E237B55F60091D598 /* FightController.swift in Sources */,
+				B7F90D27237D566800B0C36C /* WinController.swift in Sources */,
+				B7F90D2B237D5CBB00B0C36C /* LooseController.swift in Sources */,
 				B727A9DA237B4EAD0091D598 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

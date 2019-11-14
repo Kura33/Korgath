@@ -2,7 +2,16 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../sound/defendOrc.wav">
+      location = "group:../images/loose.png">
+   </FileRef>
+   <FileRef
+      location = "group:../images/start.jpg">
+   </FileRef>
+   <FileRef
+      location = "group:../images/start.png">
+   </FileRef>
+   <FileRef
+      location = "group:../images/equal.png">
    </FileRef>
    <FileRef
       location = "self:">
