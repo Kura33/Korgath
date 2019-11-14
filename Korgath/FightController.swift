@@ -30,7 +30,7 @@ class FightController: UIViewController {
         player2 = try? AVAudioPlayer(contentsOf: soundURl)
         player2.prepareToPlay()
         player2.numberOfLoops = -1
-        player2.volume = 0.6
+        player2.volume = 0.1
         player2.play()
         //player2.pause()
         //player2.stop()

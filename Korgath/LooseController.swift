@@ -31,14 +31,6 @@ class LooseController: UIViewController {
         player2.play()
         //player2.pause()
         //player2.stop()
-//        guard let path1 = Bundle.main.path(forResource: "test", ofType: "m4a")else{return}
-//        let soundURl1 = URL(fileURLWithPath: path1)
-//        player1 = try? AVAudioPlayer(contentsOf: soundURl1)
-//        player1.prepareToPlay()
-//        player1.volume = 0.6
-//        player1.play()
-//        //player1.pause()
-//        //player1.stop()
     }
     
     override func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)? = nil) {
